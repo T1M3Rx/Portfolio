@@ -1,8 +1,13 @@
 h3 {
     color: red;
-    front-weight: bold;
+    font-weight: bold;
  }
 
  .quote {
      font-style: italic;
+ }
+
+ .container {
+     max-width: 840px;
+     margin: 0 auto;
  }
