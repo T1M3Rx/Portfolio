@@ -2,3 +2,7 @@ h3 {
     color: red;
     front-weight: bold;
  }
+
+ .quote {
+     font-style: italic;
+ }
