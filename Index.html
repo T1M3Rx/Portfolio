@@ -1,68 +1,124 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="https:/fonts.googlepis.com/css? family=Noto+Sans| Roboto+Mono&display=swap" rel="stylesheet">
     <title>Portfolio</title>
-<link rel="stylesheet" href="styles.css" /> 
-<meta name="viewport" content="width"=divice-width, initial-scale="1">
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=divice-width, initial-scale=1">
+    <link href="https:/fonts.googlepis.com/css? family=Noto+Sans| Roboto+Mono&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <h1>Hello world ...Thank you for your patience</h1>    
-<div class="container">
     
-    <div class="intro">
-        <img class="profile-picture"
-    src="images/Profile.jpg" />
-    <h1>T1M3Rx</h1>
+    <h1>Hello world ...Thank you for your patience</h1>    
+
+    <div class="container">
+        <div class="intro">
+        <img class="Profile"
+             src="images/Profile.jpg" />
+        <h1>T1M3Rx</h1>
     <h3>Freelance Web developer</h3>
     <p class="quote">
         {{ Pause and Ponder }}
     </p>
     </div>
+ 
+    <hr/>
 
     <div class="about-grid">
-    <div class="i-like">
-    <h3>I like to</h3>
-    <ul class="about-list">
-        <li>
-        <strong>learn</strong> about web development</li>
-        <li>Self development</li>
-        <li>watch movies</li>
-        <li>eat nice nutritional foods</li>
-        <li>meet humble people</li>
-        <li>ponder and ruminate on this miraculous existance and praise</li>
-        <li>do many other endless activities</li>
+        <div class="i-like">
+        <h3>I like to</h3>
+        <ul class="about-list">
+        <li><strong>learn</strong> about web development</li>
+        <li><strong>self</strong>development</li>
+        <li>watch <strong>movies</strong></li>
+        <li>eat <strong>nice</strong> nutritional <strong>nutrition </strong>food</li>
+        <li>meet <strong>humble</strong> people</li>
+        <li>ponder and ruminate on this miraculous existance and <strong>praise</strong></li>
+        <li>do many other <strong>endless</strong> activities</li>
     </ul>
     </div>
+    </div>
+    
+    <hr/>
+
     <div class="about-grid">
     <div class="i-am"></div>
     <h3>I am</h3>
     <ul class="about-list">
-        <li>a surviver</li>
+        <li>a <strong>surviver</strong></li>
         <li>a go getter</li>
         <li>a patient persevering person</li>
-        <li>a reader</li>
-        <li>an artist</li>
-        <li>a piece of the miracle</li>
+        <li>a <strong>reader</strong></li>
+        <li>an <strong>ARTist</strong></li>
+        <li>a piece of the <strong>miracle</strong></li>
         <li>a beloved</li>
-        <li>a bread winner by grace</li>
+        <li>a bread winner by <strong>grace</strong></li>
     </ul>
     </div>
-<div class="container"
-<div class="projects-heading">
-<h3 class="container">My Projects</h3>
-<div class="about-grid"
-<div class="projects-grid">
+    </div>
 
+    <hr/>
+
+    <div>
+        <h3 class="project-heading">My Projects</h3>
+        <div class="projects-grid">
+        <div class="project-image-wrapper">
+    <h4>project 1</h4>
+    <img class="project-image" src="images/bkgrd.jpg"/>
+</div>
+<div class="project-image-wrapper">
+    <h4>Project 2</h4>
+    <img class="project-image" src="images/jacuzy.jpg"/>
+</div>
+
+<div class="project-image-wrapper">
+    <h4>project 3</h4>
+    <img class="project-image" src="images/library.jpg"/>
+</div>
+<div class="project-image-wrapper">
+    <h4>Project 4</h4>
 <img class="project-image"
-    src="https://via.placeholder.com/300"/>
+src="images/lifetime.jpg"/>
+</div>
+
+<div class="project-image-wrapper">
+    <h4>Project 5</h4>
 <img class="project-image"
-    src="https://via.placeholder.com/300"/>
+src="images/me.jpg"/>
+</div>
+
+<div class="project-image-wrapper">
+    <h4>Project 6</h4>
 <img class="project-image"
-    src="https://via.placeholder.com/300"/>
+src="images/newsjustin.jpg"/>
+</div>
+
+<div class="project-image-wrapper">
+    <h4>Project 7</h4>
 <img class="project-image"
-src="https://via.placeholder.com/300/>
+src="images/sleeping.png"/>
+</div>
+
+<div class="project-image-wrapper">
+    <h4>Project 8</h4>
+<img class="project-image"
+src="images/synaps.jpg"/>
+</div>
+
+<div class="project-image-wrapper">
+    <h4>Project 9</h4>
+<img class="project-image"
+src="images/bbw.png"/>
+</div>
+
+<div class="project-image-wrapper">
+    <h4>Project 10</h4>
+<img class="project-image"
+src="images/action.png"/>
+</div>
+</div>
+</div>
+
+<hr/>
 
 <div class="links-and-contact">
 <div class="links">
@@ -80,16 +136,22 @@ src="https://via.placeholder.com/300/>
 </ul>
 </div>
 
+<div>
     <form action="#">
         <label for="email">
-            Email: <input type="email" placeholder="Enter your email" />
+            <h4>Email</h4>
+            <input type="email" id="email" placeholder="Enter your email" />
             </label>
             <label for="message">
-                Message: <textarea id="message"> Your Message</textarea>
+                <h4>Message</h4><textarea id="message" placeholder="Your Message"></textarea>
                 </label>
-            <input type="submit" valid="Send Message" />
+                <div class="submit-button0wrapper">
+            <input type="submit" value="Send Message" id="submit-button" />
+            </div>
             </form>
 </div>
 </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
