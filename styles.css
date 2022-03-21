@@ -1,35 +1,13 @@
-.profile-picture {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    box-shadow:  0 4px 6px 0 rgba(34, 60, 80, .16);
-    transition: all ease-in-out .2s;
-
-.profile-picture hover {
-    box-shadow: 0 8px 12px 0 rgba(34,60,80,.16);
-}
-
-h3 {
-    color: red;
-    font-weight: bold;
- }
- 
- .intro {
-     text-align: center;
- }
-
 body {
-    font-family: 'Noto Sans', sans-self;
+    font-family: 'Noto Sans', sans-serif;
     background: #caebf2;
-    color: #001f3f;
+    color:antiquewhite rgb(170, 2, 2);
 }
+
+
 
 h1, h2, h3, h4 {
     font-family: 'Roboto Mono', monospace;
-}
-
-.quote {
-    font-style: italic;
 }
 
 .container {
@@ -41,19 +19,37 @@ h1, h2, h3, h4 {
     margin: 20px auto;
 }
 
+h3 {
+    color: red;
+    font-weight: bold;
+}
+
+.quote {
+    font-style: italic;
+}
+.intro {
+    text-align: center;
+}
+
 .about-grid {
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
-.i-am, .i-like {
-   text-align: center;
-   text-decoration: none
+.i-am, .i-like-to {
+    text-align: center;
+    text-decoration: none;
 }
-
+ 
 .about-list {
     list-style: none;
     padding: 0;
+}
+
+@media (max-width: 480px) {
+    .about-grid {
+        grid-template-columns: 100%;
+    }
 }
 
 .project-heading {
@@ -69,23 +65,53 @@ h1, h2, h3, h4 {
     justify-self: center;
     padding: 4%;
 }
+@media (max-width: 650px) {
+    .project-grid {
+        grid-template-columns: 100%;
+    }
+}
+
+.link-and-contact {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.link {
+    justify-self: center;
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+}
+    
+@media (max-width: 650px) {
+.links-and-contact {
+    grid-template-columns: 100%;
+ }
+}
+
+.project-image {
+    border-radius:5px;
+    box-shadow: 0 4PX 0 rgba(34, 60, 800, .16);
+    transition: all ease-in-out .2s;
+}
 
 .project-image:hover {
     filter: brightness(.75);
-    box-shadow:0 8px 2px 0 rgba(34, 60, 80, .16);
+    box-shadow: 0 8px 12px 0 rgba(34, 60, 80, .16);
 }
-
-.projectimage-wrapper {
-   justify-self: center;
-   padding: 4%;
-   position: relative; 
-}  
+.project-image-wrapper {
+    justify-self: center;
+    padding: 4%;
+    position: relative;
+}
 
 .project-image-wrapper:hover > h4 {
     visibility: visible;
 }
 
-.project-image-wrapper > h4 {
+.prjoject-image-wrapper > h4 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -96,61 +122,75 @@ h1, h2, h3, h4 {
     transition: all ease-in-out .2s;
 }
 
- .links-and-contact {
+.links-and-contact {
     display: grid;
     grid-template-columns: 30% 70%;
 }
 
 .links {
-    justify-self: center;
+justify-self: center;
 }
 
 .links-list {
     list-style: none;
-   padding: 0;
-   }
-    .project-image { 
-        border-radius: 5px;
-    box-shadow: 0 4px 6px 0 rbga(34, 60, 80, .16);
+    padding: 0;
+}
+
+@media (max-width: 650px) {
+    .links-and-contacts {
+        grid-template-columns: 100%;
+    }
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
     transition: all ease-in-out .2s;
 }
 
-form input, textare {
+.profile-picture:hover {
+    box-shadow: 0 8px 12px 0 rgba(34,60,80,.16);
+}
+
+form input, textarea {
     padding: 5px;
     border-radius: 5px;
     width: 240px;
 }
 
-form {width: 250px;
-margin: 0 auto;
+form {
+    width: 250px;
+    margin: 0 auto;
 }
 
 form input[type="submit"] {
     width: 250px;
- 
 }
 
 .submit-button-wrapper {
-    margin: 20px 0;
-
+    width: 20px 0;
 }
 
 hr {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(0,0,0), rgba(0,0,0,0.75), rgba(0.0.0.0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
 }
 
 @media (max-width: 480px) {
+    .about-grid {
+        grid-template-columns: 100%;
+    }
+}
+
+@media (max-width: 650px) {
     .project-grid {
         grid-template-columns: 100%;
-       }
-   }
+    }
+    .links-and-contact {
+        grid-template-columns: 100%;
+    }
+}
 
-   @media (max-width: 650px) {
-       .links-and-contact {
-           grid-template-columns: 100%;
-       }
-   }
-
-   
